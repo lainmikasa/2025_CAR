@@ -1,0 +1,377 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc25028a --dep-file=Libraries/Service/CpuGeneric/SysSe/Math/Ifx_RampF32.d -c99 --fp-model=2cFlnrSTz -D__CPU__=tc29xb -D__CPU_TC29XB__ --core=tc1.6.x -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\APP\\\\Display -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\APP\\\\IMU -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\APP\\\\inc -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\Driver -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\User -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\Driver\\\\inc -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\User -I../ -I../Configurations -I../Libraries -I../Libraries/Infra -I../Libraries/Infra/Platform -I../Libraries/Infra/Platform/Tricore -I../Libraries/Infra/Platform/Tricore/Compilers -I../Libraries/Infra/Sfr -I../Libraries/Infra/Sfr/TC29B -I../Libraries/Infra/Sfr/TC29B/_Reg -I../Libraries/Service -I../Libraries/Service/CpuGeneric -I../Libraries/Service/CpuGeneric/If -I../Libraries/Service/CpuGeneric/If/Ccu6If -I../Libraries/Service/CpuGeneric/StdIf -I../Libraries/Service/CpuGeneric/SysSe -I../Libraries/Service/CpuGeneric/SysSe/Bsp -I../Libraries/Service/CpuGeneric/SysSe/Math -I../Libraries/Service/CpuGeneric/_Utilities -I../Libraries/iLLD -I../Libraries/iLLD/TC29B -I../Libraries/iLLD/TC29B/Tricore -I../Libraries/iLLD/TC29B/Tricore/Asclin -I../Libraries/iLLD/TC29B/Tricore/Asclin/Asc -I../Libraries/iLLD/TC29B/Tricore/Asclin/Spi -I../Libraries/iLLD/TC29B/Tricore/Asclin/Std -I../Libraries/iLLD/TC29B/Tricore/Ccu6 -I../Libraries/iLLD/TC29B/Tricore/Ccu6/Std -I../Libraries/iLLD/TC29B/Tricore/Ccu6/Timer -I../Libraries/iLLD/TC29B/Tricore/Cpu -I../Libraries/iLLD/TC29B/Tricore/Cpu/CStart -I../Libraries/iLLD/TC29B/Tricore/Cpu/Irq -I../Libraries/iLLD/TC29B/Tricore/Cpu/Std -I../Libraries/iLLD/TC29B/Tricore/Cpu/Trap -I../Libraries/iLLD/TC29B/Tricore/Dma -I../Libraries/iLLD/TC29B/Tricore/Dma/Dma -I../Libraries/iLLD/TC29B/Tricore/Dma/Std -I../Libraries/iLLD/TC29B/Tricore/Flash -I../Libraries/iLLD/TC29B/Tricore/Flash/Std -I../Libraries/iLLD/TC29B/Tricore/Gpt12 -I../Libraries/iLLD/TC29B/Tricore/Gpt12/Std -I../Libraries/iLLD/TC29B/Tricore/Gtm -I../Libraries/iLLD/TC29B/Tricore/Gtm/Atom -I../Libraries/iLLD/TC29B/Tricore/Gtm/Atom/Pwm -I../Libraries/iLLD/TC29B/Tricore/Gtm/Std -I../Libraries/iLLD/TC29B/Tricore/Gtm/Tim -I../Libraries/iLLD/TC29B/Tricore/Gtm/Tim/In -I../Libraries/iLLD/TC29B/Tricore/Gtm/Tom -I../Libraries/iLLD/TC29B/Tricore/Gtm/Tom/Pwm -I../Libraries/iLLD/TC29B/Tricore/Mtu -I../Libraries/iLLD/TC29B/Tricore/Mtu/Std -I../Libraries/iLLD/TC29B/Tricore/Port -I../Libraries/iLLD/TC29B/Tricore/Port/Std -I../Libraries/iLLD/TC29B/Tricore/Qspi -I../Libraries/iLLD/TC29B/Tricore/Qspi/SpiMaster -I../Libraries/iLLD/TC29B/Tricore/Qspi/Std -I../Libraries/iLLD/TC29B/Tricore/Scu -I../Libraries/iLLD/TC29B/Tricore/Scu/Std -I../Libraries/iLLD/TC29B/Tricore/Src -I../Libraries/iLLD/TC29B/Tricore/Src/Std -I../Libraries/iLLD/TC29B/Tricore/Stm -I../Libraries/iLLD/TC29B/Tricore/Stm/Std -I../Libraries/iLLD/TC29B/Tricore/Vadc -I../Libraries/iLLD/TC29B/Tricore/Vadc/Adc -I../Libraries/iLLD/TC29B/Tricore/Vadc/Std -I../Libraries/iLLD/TC29B/Tricore/_Impl -I../Libraries/iLLD/TC29B/Tricore/_Lib -I../Libraries/iLLD/TC29B/Tricore/_Lib/DataHandling -I../Libraries/iLLD/TC29B/Tricore/_PinMap -I../src -I../src/APP -I../src/Driver -I../src/Main -I../src/User -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o Libraries/Service/CpuGeneric/SysSe/Math/Ifx_RampF32.src ../Libraries/Service/CpuGeneric/SysSe/Math/Ifx_RampF32.c"
+	.compiler_name		"ctc"
+	;source	'../Libraries/Service/CpuGeneric/SysSe/Math/Ifx_RampF32.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.Ifx_RampF32.Ifx_RampF32_step',code,cluster('Ifx_RampF32_step')
+	.sect	'.text.Ifx_RampF32.Ifx_RampF32_step'
+	.align	2
+	
+	.global	Ifx_RampF32_step
+; Function Ifx_RampF32_step
+.L12:
+Ifx_RampF32_step:	.type	func
+	ld.w	d0,[a4]
+.L34:
+	ld.w	d15,[a4]4
+.L35:
+	cmp.f	d15,d0,d15
+	extr.u	d15,d15,#0,#1
+.L36:
+	jeq	d15,#0,.L2
+.L37:
+	ld.w	d0,[a4]4
+	ld.w	d1,[a4]
+	ld.w	d15,[a4]8
+	add.f	d15,d1,d15
+	cmp.f	d15,d0,d15
+	jnz.t	d15:0,.L3
+	ld.w	d0,[a4]
+	ld.w	d15,[a4]8
+	add.f	d15,d0,d15
+	j	.L4
+.L3:
+	ld.w	d15,[a4]4
+.L4:
+	st.w	[a4],d15
+.L38:
+	j	.L5
+.L2:
+	ld.w	d0,[a4]
+.L39:
+	ld.w	d15,[a4]4
+.L40:
+	cmp.f	d15,d0,d15
+	extr.u	d15,d15,#2,#1
+.L41:
+	jeq	d15,#0,.L6
+.L42:
+	ld.w	d0,[a4]4
+	ld.w	d1,[a4]
+	ld.w	d15,[a4]8
+	sub.f	d15,d1,d15
+	cmp.f	d15,d0,d15
+	jnz.t	d15:2,.L7
+	ld.w	d0,[a4]
+	ld.w	d15,[a4]8
+	sub.f	d15,d0,d15
+	j	.L8
+.L7:
+	ld.w	d15,[a4]4
+.L8:
+	st.w	[a4],d15
+.L43:
+	j	.L9
+.L6:
+.L9:
+.L5:
+	ld.w	d2,[a4]
+.L44:
+	j	.L10
+.L10:
+	ret
+.L23:
+	
+__Ifx_RampF32_step_function_end:
+	.size	Ifx_RampF32_step,__Ifx_RampF32_step_function_end-Ifx_RampF32_step
+.L21:
+	; End of function
+	
+	.calls	'Ifx_RampF32_step','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L14:
+	.word	1087
+	.half	3
+	.word	.L15
+	.byte	4
+.L13:
+	.byte	1
+	.byte	'../Libraries/Service/CpuGeneric/SysSe/Math/Ifx_RampF32.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\Users\\24387\\AURIX-v1.10.6-workspace\\LQ_TC297TestLED-V7.0\\Debug\\',0,12,1
+	.word	.L16
+	.byte	2,1,1,3
+	.word	219
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,58,17,1,1,5
+	.byte	'fun',0,1,58,43
+	.word	222
+	.byte	6,0,7
+	.byte	'__fract',0,4,128,1
+.L22:
+	.byte	7
+	.byte	'float',0,4,4,8
+	.byte	'Ifx__float_to_fract',0,3,1,149,2,18
+	.word	267
+	.byte	1,1,5
+	.byte	'a',0,1,149,2,44
+	.word	279
+	.byte	6,0,7
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'void',0,3
+	.word	359
+	.byte	8
+	.byte	'__ld64',0,3,2,132,1,19
+	.word	333
+	.byte	1,1,5
+	.byte	'addr',0,2,132,1,32
+	.word	365
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,140,1,17,1,1,5
+	.byte	'addr',0,2,140,1,30
+	.word	365
+	.byte	5
+	.byte	'value',0,2,140,1,43
+	.word	333
+	.byte	6,0,10,3,55,9,12,11
+	.byte	'uk',0
+	.word	279
+	.byte	4,2,35,0,11
+	.byte	'ik',0
+	.word	279
+	.byte	4,2,35,4,11
+	.byte	'delta',0
+	.word	279
+	.byte	4,2,35,8,0
+.L24:
+	.byte	3
+	.word	451
+	.byte	4
+	.byte	'Ifx_RampF32_reset',0,3,3,82,17,1,1,5
+	.byte	'ramp',0,3,82,48
+	.word	496
+	.byte	6,0,4
+	.byte	'Ifx_RampF32_setSlewRate',0,3,3,106,17,1,1,5
+	.byte	'ramp',0,3,106,54
+	.word	496
+	.byte	5
+	.byte	'slewRate',0,3,106,68
+	.word	279
+	.byte	5
+	.byte	'period',0,3,106,86
+	.word	279
+	.byte	6,0,12
+	.word	227
+	.byte	13
+	.word	253
+	.byte	6,0,12
+	.word	288
+	.byte	13
+	.word	320
+	.byte	6,0,12
+	.word	370
+	.byte	13
+	.word	389
+	.byte	6,0,12
+	.word	405
+	.byte	13
+	.word	420
+	.byte	13
+	.word	434
+	.byte	6,0,12
+	.word	501
+	.byte	13
+	.word	526
+	.byte	6,0,12
+	.word	541
+	.byte	13
+	.word	572
+	.byte	13
+	.word	585
+	.byte	13
+	.word	602
+	.byte	6,0,7
+	.byte	'short int',0,2,5,14
+	.byte	'__wchar_t',0,4,1,1
+	.word	706
+	.byte	7
+	.byte	'unsigned int',0,4,7,14
+	.byte	'__size_t',0,4,1,1
+	.word	737
+	.byte	7
+	.byte	'int',0,4,5,14
+	.byte	'__ptrdiff_t',0,4,1,1
+	.word	770
+	.byte	15,1,3
+	.word	797
+	.byte	14
+	.byte	'__codeptr',0,4,1,1
+	.word	799
+	.byte	7
+	.byte	'unsigned char',0,1,8,14
+	.byte	'uint8',0,5,108,29
+	.word	822
+	.byte	7
+	.byte	'unsigned short int',0,2,7,14
+	.byte	'uint16',0,5,112,29
+	.word	853
+	.byte	7
+	.byte	'unsigned long int',0,4,7,14
+	.byte	'uint32',0,5,116,29
+	.word	890
+	.byte	14
+	.byte	'uint64',0,5,121,29
+	.word	333
+	.byte	14
+	.byte	'sint16',0,5,129,1,29
+	.word	706
+	.byte	7
+	.byte	'long int',0,4,5,14
+	.byte	'sint32',0,5,134,1,29
+	.word	957
+	.byte	7
+	.byte	'long long int',0,8,5,14
+	.byte	'sint64',0,5,141,1,29
+	.word	985
+	.byte	14
+	.byte	'float32',0,5,170,1,29
+	.word	279
+	.byte	14
+	.byte	'pvoid',0,6,54,28
+	.word	365
+	.byte	14
+	.byte	'Ifx_TickTime',0,6,76,28
+	.word	985
+	.byte	14
+	.byte	'Ifx_RampF32',0,3,60,3
+	.word	451
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L15:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
+	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,58,15,59,15,57
+	.byte	15,11,15,0,0,11,13,0,3,8,73,19,11,15,56,9,0,0,12,46,1,49,19,0,0,13,5,0,49,19,0,0,14,22,0,3,8,58,15,59
+	.byte	15,57,15,73,19,0,0,15,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L16:
+	.word	.L27-.L26
+.L26:
+	.half	3
+	.word	.L29-.L28
+.L28:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'../Libraries/Service/CpuGeneric/SysSe/Math',0,0
+	.byte	'..\\Libraries\\iLLD\\TC29B\\Tricore\\Cpu\\Std\\IfxCpu_IntrinsicsTasking.h',0,0,0,0
+	.byte	'..\\Libraries\\iLLD\\TC29B\\Tricore\\Cpu\\Std\\IfxCpu_Intrinsics.h',0,0,0,0
+	.byte	'..\\Libraries\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_RampF32.h',0,0,0,0
+	.byte	'Ifx_RampF32.c',0,1,0,0
+	.byte	'..\\Libraries\\iLLD\\TC29B\\Tricore\\Cpu\\Std\\Platform_Types.h',0,0,0,0
+	.byte	'..\\Libraries\\iLLD\\TC29B\\Tricore\\Cpu\\Std\\Ifx_Types.h',0,0,0,0,0
+.L29:
+.L27:
+	.sdecl	'.debug_info',debug,cluster('Ifx_RampF32_step')
+	.sect	'.debug_info'
+.L17:
+	.word	292
+	.half	3
+	.word	.L18
+	.byte	4,1
+	.byte	'../Libraries/Service/CpuGeneric/SysSe/Math/Ifx_RampF32.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\Users\\24387\\AURIX-v1.10.6-workspace\\LQ_TC297TestLED-V7.0\\Debug\\',0,12,1
+	.word	.L20,.L19
+	.byte	2
+	.word	.L13
+	.byte	3
+	.byte	'Ifx_RampF32_step',0,1,54,9
+	.word	.L22
+	.byte	1,1,1
+	.word	.L12,.L23,.L11
+	.byte	4
+	.byte	'ramp',0,1,54,39
+	.word	.L24,.L25
+	.byte	5
+	.word	.L12,.L23
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_RampF32_step')
+	.sect	'.debug_abbrev'
+.L18:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_RampF32_step')
+	.sect	'.debug_line'
+.L19:
+	.word	.L31-.L30
+.L30:
+	.half	3
+	.word	.L33-.L32
+.L32:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'../Libraries/Service/CpuGeneric/SysSe/Math',0,0
+	.byte	'Ifx_RampF32.c',0,1,0,0,0
+.L33:
+	.byte	5,13,7,0,5,2
+	.word	.L12
+	.byte	3,55,1,5,24,9
+	.half	.L34-.L12
+	.byte	1,5,18,9
+	.half	.L35-.L34
+	.byte	1,5,5,9
+	.half	.L36-.L35
+	.byte	1,5,20,7,9
+	.half	.L37-.L36
+	.byte	3,2,1,5,18,9
+	.half	.L4-.L37
+	.byte	1,5,60,9
+	.half	.L38-.L4
+	.byte	1,5,18,9
+	.half	.L2-.L38
+	.byte	3,2,1,5,29,9
+	.half	.L39-.L2
+	.byte	1,5,23,9
+	.half	.L40-.L39
+	.byte	1,5,10,9
+	.half	.L41-.L40
+	.byte	1,5,20,7,9
+	.half	.L42-.L41
+	.byte	3,2,1,5,18,9
+	.half	.L8-.L42
+	.byte	1,5,60,9
+	.half	.L43-.L8
+	.byte	1,5,16,9
+	.half	.L5-.L43
+	.byte	3,5,1,5,5,9
+	.half	.L44-.L5
+	.byte	1,5,1,9
+	.half	.L10-.L44
+	.byte	3,1,1,7,9
+	.half	.L21-.L10
+	.byte	0,1,1
+.L31:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_RampF32_step')
+	.sect	'.debug_ranges'
+.L20:
+	.word	-1,.L12,0,.L21-.L12,0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_RampF32_step')
+	.sect	'.debug_loc'
+.L11:
+	.word	-1,.L12,0,.L23-.L12
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L25:
+	.word	-1,.L12,0,.L23-.L12
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L45:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Ifx_RampF32_step')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L45,.L12,.L23-.L12
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	; Module end

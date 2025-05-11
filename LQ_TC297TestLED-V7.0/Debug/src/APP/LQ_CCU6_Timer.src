@@ -1,0 +1,217 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc21336a --dep-file=src/APP/LQ_CCU6_Timer.d -c99 --fp-model=2cFlnrSTz -D__CPU__=tc29xb -D__CPU_TC29XB__ --core=tc1.6.x -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\APP\\\\Display -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\APP\\\\IMU -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\APP\\\\inc -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\Driver -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\User -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\Driver\\\\inc -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\User -I../ -I../Configurations -I../Libraries -I../Libraries/Infra -I../Libraries/Infra/Platform -I../Libraries/Infra/Platform/Tricore -I../Libraries/Infra/Platform/Tricore/Compilers -I../Libraries/Infra/Sfr -I../Libraries/Infra/Sfr/TC29B -I../Libraries/Infra/Sfr/TC29B/_Reg -I../Libraries/Service -I../Libraries/Service/CpuGeneric -I../Libraries/Service/CpuGeneric/If -I../Libraries/Service/CpuGeneric/If/Ccu6If -I../Libraries/Service/CpuGeneric/StdIf -I../Libraries/Service/CpuGeneric/SysSe -I../Libraries/Service/CpuGeneric/SysSe/Bsp -I../Libraries/Service/CpuGeneric/SysSe/Math -I../Libraries/Service/CpuGeneric/_Utilities -I../Libraries/iLLD -I../Libraries/iLLD/TC29B -I../Libraries/iLLD/TC29B/Tricore -I../Libraries/iLLD/TC29B/Tricore/Asclin -I../Libraries/iLLD/TC29B/Tricore/Asclin/Asc -I../Libraries/iLLD/TC29B/Tricore/Asclin/Spi -I../Libraries/iLLD/TC29B/Tricore/Asclin/Std -I../Libraries/iLLD/TC29B/Tricore/Ccu6 -I../Libraries/iLLD/TC29B/Tricore/Ccu6/Std -I../Libraries/iLLD/TC29B/Tricore/Ccu6/Timer -I../Libraries/iLLD/TC29B/Tricore/Cpu -I../Libraries/iLLD/TC29B/Tricore/Cpu/CStart -I../Libraries/iLLD/TC29B/Tricore/Cpu/Irq -I../Libraries/iLLD/TC29B/Tricore/Cpu/Std -I../Libraries/iLLD/TC29B/Tricore/Cpu/Trap -I../Libraries/iLLD/TC29B/Tricore/Dma -I../Libraries/iLLD/TC29B/Tricore/Dma/Dma -I../Libraries/iLLD/TC29B/Tricore/Dma/Std -I../Libraries/iLLD/TC29B/Tricore/Flash -I../Libraries/iLLD/TC29B/Tricore/Flash/Std -I../Libraries/iLLD/TC29B/Tricore/Gpt12 -I../Libraries/iLLD/TC29B/Tricore/Gpt12/Std -I../Libraries/iLLD/TC29B/Tricore/Gtm -I../Libraries/iLLD/TC29B/Tricore/Gtm/Atom -I../Libraries/iLLD/TC29B/Tricore/Gtm/Atom/Pwm -I../Libraries/iLLD/TC29B/Tricore/Gtm/Std -I../Libraries/iLLD/TC29B/Tricore/Gtm/Tim -I../Libraries/iLLD/TC29B/Tricore/Gtm/Tim/In -I../Libraries/iLLD/TC29B/Tricore/Gtm/Tom -I../Libraries/iLLD/TC29B/Tricore/Gtm/Tom/Pwm -I../Libraries/iLLD/TC29B/Tricore/Mtu -I../Libraries/iLLD/TC29B/Tricore/Mtu/Std -I../Libraries/iLLD/TC29B/Tricore/Port -I../Libraries/iLLD/TC29B/Tricore/Port/Std -I../Libraries/iLLD/TC29B/Tricore/Qspi -I../Libraries/iLLD/TC29B/Tricore/Qspi/SpiMaster -I../Libraries/iLLD/TC29B/Tricore/Qspi/Std -I../Libraries/iLLD/TC29B/Tricore/Scu -I../Libraries/iLLD/TC29B/Tricore/Scu/Std -I../Libraries/iLLD/TC29B/Tricore/Src -I../Libraries/iLLD/TC29B/Tricore/Src/Std -I../Libraries/iLLD/TC29B/Tricore/Stm -I../Libraries/iLLD/TC29B/Tricore/Stm/Std -I../Libraries/iLLD/TC29B/Tricore/Vadc -I../Libraries/iLLD/TC29B/Tricore/Vadc/Adc -I../Libraries/iLLD/TC29B/Tricore/Vadc/Std -I../Libraries/iLLD/TC29B/Tricore/_Impl -I../Libraries/iLLD/TC29B/Tricore/_Lib -I../Libraries/iLLD/TC29B/Tricore/_Lib/DataHandling -I../Libraries/iLLD/TC29B/Tricore/_PinMap -I../src -I../src/APP -I../src/Driver -I../src/Main -I../src/User -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o src/APP/LQ_CCU6_Timer.src ../src/APP/LQ_CCU6_Timer.c"
+	.compiler_name		"ctc"
+	;source	'../src/APP/LQ_CCU6_Timer.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.LQ_CCU6_Timer.LQ_CCU6_Timer',code,cluster('LQ_CCU6_Timer')
+	.sect	'.text.LQ_CCU6_Timer.LQ_CCU6_Timer'
+	.align	2
+	
+	.global	LQ_CCU6_Timer
+; Function LQ_CCU6_Timer
+.L5:
+LQ_CCU6_Timer:	.type	func
+	mov	d4,#0
+.L24:
+	mov	d5,#0
+.L25:
+	mov	d6,#21875
+	sh	d6,#5
+	call	CCU6_InitConfig
+.L26:
+	mov	d4,#0
+.L27:
+	mov	d5,#1
+.L28:
+	mov	d6,#15625
+	sh	d6,#5
+	call	CCU6_InitConfig
+.L29:
+	mov	d4,#1
+.L30:
+	mov	d5,#0
+.L31:
+	mov	d6,#9375
+	sh	d6,#5
+	call	CCU6_InitConfig
+.L32:
+	mov	d4,#1
+.L33:
+	mov	d5,#1
+.L34:
+	mov	d6,#3125
+	sh	d6,#6
+	call	CCU6_InitConfig
+.L35:
+	j	.L2
+.L3:
+.L2:
+	j	.L3
+.L36:
+	ret
+.L15:
+	
+__LQ_CCU6_Timer_function_end:
+	.size	LQ_CCU6_Timer,__LQ_CCU6_Timer_function_end-LQ_CCU6_Timer
+.L14:
+	; End of function
+	
+	.calls	'LQ_CCU6_Timer','CCU6_InitConfig'
+	.extern	CCU6_InitConfig
+	.calls	'LQ_CCU6_Timer','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L7:
+	.word	395
+	.half	3
+	.word	.L8
+	.byte	4
+.L6:
+	.byte	1
+	.byte	'../src/APP/LQ_CCU6_Timer.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\Users\\24387\\AURIX-v1.10.6-workspace\\LQ_TC297TestLED-V7.0\\Debug\\',0,12,1
+	.word	.L9
+	.byte	2,1,7,9,1,3
+	.byte	'CCU60',0,0,3
+	.byte	'CCU61',0,1,0,2,1,16,9,1,3
+	.byte	'CCU6_Channel0',0,0,3
+	.byte	'CCU6_Channel1',0,1,0,4
+	.byte	'unsigned long int',0,4,7,5
+	.byte	'CCU6_InitConfig',0,1,23,6,1,1,1,1,6
+	.byte	'ccu6',0,1,23,29
+	.word	189
+	.byte	6
+	.byte	'channel',0,1,23,50
+	.word	211
+	.byte	6
+	.byte	'ms',0,1,23,73
+	.word	249
+	.byte	0,7,1,8
+	.word	335
+	.byte	9
+	.byte	'__codeptr',0,2,1,1
+	.word	337
+	.byte	9
+	.byte	'CCU6_t',0,1,11,3
+	.word	189
+	.byte	9
+	.byte	'CCU6_Channel_t',0,1,20,3
+	.word	211
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L8:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,4,1,58,15,59,15,57,15,11,15,0,0,3,40,0,3,8,28,13,0,0,4
+	.byte	36,0,3,8,11,15,62,15,0,0,5,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,6,5,0,3,8,58,15,59,15
+	.byte	57,15,73,19,0,0,7,21,0,54,15,0,0,8,15,0,73,19,0,0,9,22,0,3,8,58,15,59,15,57,15,73,19,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L9:
+	.word	.L17-.L16
+.L16:
+	.half	3
+	.word	.L19-.L18
+.L18:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\Driver\\\\inc',0
+	.byte	'../src/APP',0,0
+	.byte	'LQ_CCU6.h',0,1,0,0
+	.byte	'LQ_CCU6_Timer.c',0,2,0,0,0
+.L19:
+.L17:
+	.sdecl	'.debug_info',debug,cluster('LQ_CCU6_Timer')
+	.sect	'.debug_info'
+.L10:
+	.word	238
+	.half	3
+	.word	.L11
+	.byte	4,1
+	.byte	'../src/APP/LQ_CCU6_Timer.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\Users\\24387\\AURIX-v1.10.6-workspace\\LQ_TC297TestLED-V7.0\\Debug\\',0,12,1
+	.word	.L13,.L12
+	.byte	2
+	.word	.L6
+	.byte	3
+	.byte	'LQ_CCU6_Timer',0,1,11,6,1,1,1
+	.word	.L5,.L15,.L4
+	.byte	4
+	.word	.L5,.L15
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('LQ_CCU6_Timer')
+	.sect	'.debug_abbrev'
+.L11:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('LQ_CCU6_Timer')
+	.sect	'.debug_line'
+.L12:
+	.word	.L21-.L20
+.L20:
+	.half	3
+	.word	.L23-.L22
+.L22:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'../src/APP',0,0
+	.byte	'LQ_CCU6_Timer.c',0,1,0,0,0
+.L23:
+	.byte	5,21,7,0,5,2
+	.word	.L5
+	.byte	3,12,1,5,28,9
+	.half	.L24-.L5
+	.byte	1,5,43,9
+	.half	.L25-.L24
+	.byte	1,5,21,9
+	.half	.L26-.L25
+	.byte	3,1,1,5,28,9
+	.half	.L27-.L26
+	.byte	1,5,43,9
+	.half	.L28-.L27
+	.byte	1,5,21,9
+	.half	.L29-.L28
+	.byte	3,1,1,5,28,9
+	.half	.L30-.L29
+	.byte	1,5,43,9
+	.half	.L31-.L30
+	.byte	1,5,21,9
+	.half	.L32-.L31
+	.byte	3,1,1,5,28,9
+	.half	.L33-.L32
+	.byte	1,5,43,9
+	.half	.L34-.L33
+	.byte	1,5,13,9
+	.half	.L35-.L34
+	.byte	3,3,1,5,1,9
+	.half	.L36-.L35
+	.byte	3,4,1,7,9
+	.half	.L14-.L36
+	.byte	0,1,1
+.L21:
+	.sdecl	'.debug_ranges',debug,cluster('LQ_CCU6_Timer')
+	.sect	'.debug_ranges'
+.L13:
+	.word	-1,.L5,0,.L14-.L5,0,0
+	.sdecl	'.debug_loc',debug,cluster('LQ_CCU6_Timer')
+	.sect	'.debug_loc'
+.L4:
+	.word	-1,.L5,0,.L15-.L5
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L37:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('LQ_CCU6_Timer')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L37,.L5,.L15-.L5
+	; Module end

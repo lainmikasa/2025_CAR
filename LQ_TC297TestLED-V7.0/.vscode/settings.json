@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "lq_camera.h": "c",
+        "lq_mt9v034.h": "c"
+    }
+}

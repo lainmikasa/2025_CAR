@@ -1,0 +1,282 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc32424c -c99 --fp-model=2cFlnrSTz -D__CPU__=tc29xb -D__CPU_TC29XB__ --core=tc1.6.x -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\APP\\\\Display -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\APP\\\\IMU -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\APP\\\\inc -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\Driver -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\User -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\Driver\\\\inc -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\User -I../ -I../Configurations -I../Libraries -I../Libraries/Infra -I../Libraries/Infra/Platform -I../Libraries/Infra/Platform/Tricore -I../Libraries/Infra/Platform/Tricore/Compilers -I../Libraries/Infra/Sfr -I../Libraries/Infra/Sfr/TC29B -I../Libraries/Infra/Sfr/TC29B/_Reg -I../Libraries/Service -I../Libraries/Service/CpuGeneric -I../Libraries/Service/CpuGeneric/If -I../Libraries/Service/CpuGeneric/If/Ccu6If -I../Libraries/Service/CpuGeneric/StdIf -I../Libraries/Service/CpuGeneric/SysSe -I../Libraries/Service/CpuGeneric/SysSe/Bsp -I../Libraries/Service/CpuGeneric/SysSe/Math -I../Libraries/Service/CpuGeneric/_Utilities -I../Libraries/iLLD -I../Libraries/iLLD/TC29B -I../Libraries/iLLD/TC29B/Tricore -I../Libraries/iLLD/TC29B/Tricore/Asclin -I../Libraries/iLLD/TC29B/Tricore/Asclin/Asc -I../Libraries/iLLD/TC29B/Tricore/Asclin/Spi -I../Libraries/iLLD/TC29B/Tricore/Asclin/Std -I../Libraries/iLLD/TC29B/Tricore/Ccu6 -I../Libraries/iLLD/TC29B/Tricore/Ccu6/Std -I../Libraries/iLLD/TC29B/Tricore/Ccu6/Timer -I../Libraries/iLLD/TC29B/Tricore/Cpu -I../Libraries/iLLD/TC29B/Tricore/Cpu/CStart -I../Libraries/iLLD/TC29B/Tricore/Cpu/Irq -I../Libraries/iLLD/TC29B/Tricore/Cpu/Std -I../Libraries/iLLD/TC29B/Tricore/Cpu/Trap -I../Libraries/iLLD/TC29B/Tricore/Dma -I../Libraries/iLLD/TC29B/Tricore/Dma/Dma -I../Libraries/iLLD/TC29B/Tricore/Dma/Std -I../Libraries/iLLD/TC29B/Tricore/Flash -I../Libraries/iLLD/TC29B/Tricore/Flash/Std -I../Libraries/iLLD/TC29B/Tricore/Gpt12 -I../Libraries/iLLD/TC29B/Tricore/Gpt12/Std -I../Libraries/iLLD/TC29B/Tricore/Gtm -I../Libraries/iLLD/TC29B/Tricore/Gtm/Atom -I../Libraries/iLLD/TC29B/Tricore/Gtm/Atom/Pwm -I../Libraries/iLLD/TC29B/Tricore/Gtm/Std -I../Libraries/iLLD/TC29B/Tricore/Gtm/Tim -I../Libraries/iLLD/TC29B/Tricore/Gtm/Tim/In -I../Libraries/iLLD/TC29B/Tricore/Gtm/Tom -I../Libraries/iLLD/TC29B/Tricore/Gtm/Tom/Pwm -I../Libraries/iLLD/TC29B/Tricore/Mtu -I../Libraries/iLLD/TC29B/Tricore/Mtu/Std -I../Libraries/iLLD/TC29B/Tricore/Port -I../Libraries/iLLD/TC29B/Tricore/Port/Std -I../Libraries/iLLD/TC29B/Tricore/Qspi -I../Libraries/iLLD/TC29B/Tricore/Qspi/SpiMaster -I../Libraries/iLLD/TC29B/Tricore/Qspi/Std -I../Libraries/iLLD/TC29B/Tricore/Scu -I../Libraries/iLLD/TC29B/Tricore/Scu/Std -I../Libraries/iLLD/TC29B/Tricore/Src -I../Libraries/iLLD/TC29B/Tricore/Src/Std -I../Libraries/iLLD/TC29B/Tricore/Stm -I../Libraries/iLLD/TC29B/Tricore/Stm/Std -I../Libraries/iLLD/TC29B/Tricore/Vadc -I../Libraries/iLLD/TC29B/Tricore/Vadc/Adc -I../Libraries/iLLD/TC29B/Tricore/Vadc/Std -I../Libraries/iLLD/TC29B/Tricore/_Impl -I../Libraries/iLLD/TC29B/Tricore/_Lib -I../Libraries/iLLD/TC29B/Tricore/_Lib/DataHandling -I../Libraries/iLLD/TC29B/Tricore/_PinMap -I../src -I../src/APP -I../src/Driver -I../src/Main -I../src/User -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 --no-warnings -o src/User/cpp_transform.src cc32424a.ic"
+	.compiler_name		"ctc"
+	;source	'../src/User/cpp_transform.cpp'
+
+	
+$TC16X
+	
+	.sdecl	'.text.cpp_transform.linearMotor_test',code,cluster('linearMotor_test')
+	.sect	'.text.cpp_transform.linearMotor_test'
+	.align	2
+	
+	.global	linearMotor_test
+; Function linearMotor_test
+.L3:
+linearMotor_test:	.type	func
+	movh.a	a4,#@his(motorInstance)
+	lea	a4,[a4]@los(motorInstance)
+	call	_ZN11linearMotor4testEv
+.L36:
+	ret
+.L22:
+	
+__linearMotor_test_function_end:
+	.size	linearMotor_test,__linearMotor_test_function_end-linearMotor_test
+.L14:
+	; End of function
+	
+	.sdecl	'.text.cpp_transform.linearMotor_motor',code,cluster('linearMotor_motor')
+	.sect	'.text.cpp_transform.linearMotor_motor'
+	.align	2
+	
+	.global	linearMotor_motor
+; Function linearMotor_motor
+.L5:
+linearMotor_motor:	.type	func
+	movh.a	a4,#@his(motorInstance)
+	lea	a4,[a4]@los(motorInstance)
+.L41:
+	call	_ZN11linearMotor5motorEf
+.L27:
+	ret
+.L23:
+	
+__linearMotor_motor_function_end:
+	.size	linearMotor_motor,__linearMotor_motor_function_end-linearMotor_motor
+.L19:
+	; End of function
+	
+	.sdecl	'.bss.cpp_transform.motorInstance',data,cluster('motorInstance')
+	.sect	'.bss.cpp_transform.motorInstance'
+motorInstance:	.type	object
+	.size	motorInstance,1
+	.space	1
+	.calls	'linearMotor_test','_ZN11linearMotor4testEv'
+	.calls	'linearMotor_motor','_ZN11linearMotor5motorEf'
+	.calls	'linearMotor_test','',0
+	.extern	_ZN11linearMotor4testEv
+	.extern	_ZN11linearMotor5motorEf
+	.calls	'linearMotor_motor','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L7:
+	.word	374
+	.half	3
+	.word	.L8
+	.byte	4
+.L6:
+	.byte	1
+	.byte	'../src/User/cpp_transform.cpp',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\Users\\24387\\AURIX-v1.10.6-workspace\\LQ_TC297TestLED-V7.0\\Debug\\',0,12,1
+	.word	.L9
+.L24:
+	.byte	2
+	.byte	'float',0,4,4,2
+	.byte	'char',0,1,6
+.L26:
+	.byte	3
+	.byte	'linearMotor',0,1,39,28,1,4
+	.byte	'__dummy',0
+	.word	201
+	.byte	1,2,35,0,0,5
+	.word	209
+	.byte	6
+	.word	244
+	.byte	7
+	.byte	'_ZN11linearMotor4testEv',0,1,41,13,1,1,1,1,8,1,41,56
+	.word	249
+	.byte	0,6
+	.word	244
+	.byte	7
+	.byte	'_ZN11linearMotor5motorEf',0,1,42,13,1,1,1,1,8,1,42,57
+	.word	295
+	.byte	9
+	.byte	'a',0,1,42,71
+	.word	192
+	.byte	0,10,1,5
+	.word	352
+	.byte	11
+	.byte	'__codeptr',0,2,1,1
+	.word	354
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L8:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,19,1,3,8,58,15,59,15,57,15
+	.byte	11,15,0,0,4,13,0,3,8,73,19,11,15,56,9,0,0,5,15,0,73,19,0,0,6,38,0,73,19,0,0,7,46,1,3,8,58,15,59,15,57
+	.byte	15,54,15,39,12,63,12,60,12,0,0,8,5,0,58,15,59,15,57,15,73,19,0,0,9,5,0,3,8,58,15,59,15,57,15,73,19,0,0
+	.byte	10,21,0,54,15,0,0,11,22,0,3,8,58,15,59,15,57,15,73,19,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L9:
+	.word	.L29-.L28
+.L28:
+	.half	3
+	.word	.L31-.L30
+.L30:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'../src/User',0,0
+	.byte	'1.h',0,1,0,0
+	.byte	'cpp_transform.cpp',0,1,0,0,0
+.L31:
+.L29:
+	.sdecl	'.debug_info',debug,cluster('linearMotor_test')
+	.sect	'.debug_info'
+.L10:
+	.word	244
+	.half	3
+	.word	.L11
+	.byte	4,1
+	.byte	'../src/User/cpp_transform.cpp',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\Users\\24387\\AURIX-v1.10.6-workspace\\LQ_TC297TestLED-V7.0\\Debug\\',0,12,1
+	.word	.L13,.L12
+	.byte	2
+	.word	.L6
+	.byte	3
+	.byte	'linearMotor_test',0,1,12,6,1,1,1
+	.word	.L3,.L22,.L2
+	.byte	4
+	.word	.L3,.L22
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('linearMotor_test')
+	.sect	'.debug_abbrev'
+.L11:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('linearMotor_test')
+	.sect	'.debug_line'
+.L12:
+	.word	.L33-.L32
+.L32:
+	.half	3
+	.word	.L35-.L34
+.L34:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'../src/User',0,0
+	.byte	'cpp_transform.cpp',0,1,0,0,0
+.L35:
+	.byte	5,27,7,0,5,2
+	.word	.L3
+	.byte	3,12,1,5,1,9
+	.half	.L36-.L3
+	.byte	3,1,1,7,9
+	.half	.L14-.L36
+	.byte	0,1,1
+.L33:
+	.sdecl	'.debug_ranges',debug,cluster('linearMotor_test')
+	.sect	'.debug_ranges'
+.L13:
+	.word	-1,.L3,0,.L14-.L3,0,0
+	.sdecl	'.debug_info',debug,cluster('linearMotor_motor')
+	.sect	'.debug_info'
+.L15:
+	.word	270
+	.half	3
+	.word	.L16
+	.byte	4,1
+	.byte	'../src/User/cpp_transform.cpp',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\Users\\24387\\AURIX-v1.10.6-workspace\\LQ_TC297TestLED-V7.0\\Debug\\',0,12,1
+	.word	.L18,.L17
+	.byte	2
+	.word	.L6
+	.byte	3
+	.byte	'linearMotor_motor',0,1,16,6,1,1,1
+	.word	.L5,.L23,.L4
+	.byte	4
+	.byte	'__38762_30_a',0,1,16,31
+	.word	.L24,.L25
+	.byte	5
+	.word	.L5,.L23
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('linearMotor_motor')
+	.sect	'.debug_abbrev'
+.L16:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('linearMotor_motor')
+	.sect	'.debug_line'
+.L17:
+	.word	.L38-.L37
+.L37:
+	.half	3
+	.word	.L40-.L39
+.L39:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'../src/User',0,0
+	.byte	'cpp_transform.cpp',0,1,0,0,0
+.L40:
+	.byte	5,28,7,0,5,2
+	.word	.L5
+	.byte	3,16,1,5,44,9
+	.half	.L41-.L5
+	.byte	1,5,1,9
+	.half	.L27-.L41
+	.byte	3,1,1,7,9
+	.half	.L19-.L27
+	.byte	0,1,1
+.L38:
+	.sdecl	'.debug_ranges',debug,cluster('linearMotor_motor')
+	.sect	'.debug_ranges'
+.L18:
+	.word	-1,.L5,0,.L19-.L5,0,0
+	.sdecl	'.debug_info',debug,cluster('motorInstance')
+	.sect	'.debug_info'
+.L20:
+	.word	218
+	.half	3
+	.word	.L21
+	.byte	4,1
+	.byte	'../src/User/cpp_transform.cpp',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\Users\\24387\\AURIX-v1.10.6-workspace\\LQ_TC297TestLED-V7.0\\Debug\\',0,12,1,2
+	.word	.L6
+	.byte	3
+	.byte	'motorInstance',0,2,5,27
+	.word	.L26
+	.byte	5,3
+	.word	motorInstance
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('motorInstance')
+	.sect	'.debug_abbrev'
+.L21:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_loc',debug,cluster('linearMotor_motor')
+	.sect	'.debug_loc'
+.L25:
+	.word	-1,.L5,0,.L27-.L5
+	.half	1
+	.byte	84
+	.word	0,0
+.L4:
+	.word	-1,.L5,0,.L23-.L5
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('linearMotor_test')
+	.sect	'.debug_loc'
+.L2:
+	.word	-1,.L3,0,.L22-.L3
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L42:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('linearMotor_test')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L42,.L3,.L22-.L3
+	.sdecl	'.debug_frame',debug,cluster('linearMotor_motor')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L42,.L5,.L23-.L5
+	; Module end

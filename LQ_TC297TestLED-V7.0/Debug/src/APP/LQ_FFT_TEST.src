@@ -1,0 +1,694 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc31112a --dep-file=src/APP/LQ_FFT_TEST.d -c99 --fp-model=2cFlnrSTz -D__CPU__=tc29xb -D__CPU_TC29XB__ --core=tc1.6.x -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\APP\\\\Display -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\APP\\\\IMU -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\APP\\\\inc -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\Driver -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\User -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\Driver\\\\inc -ID:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\User -I../ -I../Configurations -I../Libraries -I../Libraries/Infra -I../Libraries/Infra/Platform -I../Libraries/Infra/Platform/Tricore -I../Libraries/Infra/Platform/Tricore/Compilers -I../Libraries/Infra/Sfr -I../Libraries/Infra/Sfr/TC29B -I../Libraries/Infra/Sfr/TC29B/_Reg -I../Libraries/Service -I../Libraries/Service/CpuGeneric -I../Libraries/Service/CpuGeneric/If -I../Libraries/Service/CpuGeneric/If/Ccu6If -I../Libraries/Service/CpuGeneric/StdIf -I../Libraries/Service/CpuGeneric/SysSe -I../Libraries/Service/CpuGeneric/SysSe/Bsp -I../Libraries/Service/CpuGeneric/SysSe/Math -I../Libraries/Service/CpuGeneric/_Utilities -I../Libraries/iLLD -I../Libraries/iLLD/TC29B -I../Libraries/iLLD/TC29B/Tricore -I../Libraries/iLLD/TC29B/Tricore/Asclin -I../Libraries/iLLD/TC29B/Tricore/Asclin/Asc -I../Libraries/iLLD/TC29B/Tricore/Asclin/Spi -I../Libraries/iLLD/TC29B/Tricore/Asclin/Std -I../Libraries/iLLD/TC29B/Tricore/Ccu6 -I../Libraries/iLLD/TC29B/Tricore/Ccu6/Std -I../Libraries/iLLD/TC29B/Tricore/Ccu6/Timer -I../Libraries/iLLD/TC29B/Tricore/Cpu -I../Libraries/iLLD/TC29B/Tricore/Cpu/CStart -I../Libraries/iLLD/TC29B/Tricore/Cpu/Irq -I../Libraries/iLLD/TC29B/Tricore/Cpu/Std -I../Libraries/iLLD/TC29B/Tricore/Cpu/Trap -I../Libraries/iLLD/TC29B/Tricore/Dma -I../Libraries/iLLD/TC29B/Tricore/Dma/Dma -I../Libraries/iLLD/TC29B/Tricore/Dma/Std -I../Libraries/iLLD/TC29B/Tricore/Flash -I../Libraries/iLLD/TC29B/Tricore/Flash/Std -I../Libraries/iLLD/TC29B/Tricore/Gpt12 -I../Libraries/iLLD/TC29B/Tricore/Gpt12/Std -I../Libraries/iLLD/TC29B/Tricore/Gtm -I../Libraries/iLLD/TC29B/Tricore/Gtm/Atom -I../Libraries/iLLD/TC29B/Tricore/Gtm/Atom/Pwm -I../Libraries/iLLD/TC29B/Tricore/Gtm/Std -I../Libraries/iLLD/TC29B/Tricore/Gtm/Tim -I../Libraries/iLLD/TC29B/Tricore/Gtm/Tim/In -I../Libraries/iLLD/TC29B/Tricore/Gtm/Tom -I../Libraries/iLLD/TC29B/Tricore/Gtm/Tom/Pwm -I../Libraries/iLLD/TC29B/Tricore/Mtu -I../Libraries/iLLD/TC29B/Tricore/Mtu/Std -I../Libraries/iLLD/TC29B/Tricore/Port -I../Libraries/iLLD/TC29B/Tricore/Port/Std -I../Libraries/iLLD/TC29B/Tricore/Qspi -I../Libraries/iLLD/TC29B/Tricore/Qspi/SpiMaster -I../Libraries/iLLD/TC29B/Tricore/Qspi/Std -I../Libraries/iLLD/TC29B/Tricore/Scu -I../Libraries/iLLD/TC29B/Tricore/Scu/Std -I../Libraries/iLLD/TC29B/Tricore/Src -I../Libraries/iLLD/TC29B/Tricore/Src/Std -I../Libraries/iLLD/TC29B/Tricore/Stm -I../Libraries/iLLD/TC29B/Tricore/Stm/Std -I../Libraries/iLLD/TC29B/Tricore/Vadc -I../Libraries/iLLD/TC29B/Tricore/Vadc/Adc -I../Libraries/iLLD/TC29B/Tricore/Vadc/Std -I../Libraries/iLLD/TC29B/Tricore/_Impl -I../Libraries/iLLD/TC29B/Tricore/_Lib -I../Libraries/iLLD/TC29B/Tricore/_Lib/DataHandling -I../Libraries/iLLD/TC29B/Tricore/_PinMap -I../src -I../src/APP -I../src/Driver -I../src/Main -I../src/User -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o src/APP/LQ_FFT_TEST.src ../src/APP/LQ_FFT_TEST.c"
+	.compiler_name		"ctc"
+	;source	'../src/APP/LQ_FFT_TEST.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.LQ_FFT_TEST.Test_SoftFft',code,cluster('Test_SoftFft')
+	.sect	'.text.LQ_FFT_TEST.Test_SoftFft'
+	.align	2
+	
+	.global	Test_SoftFft
+; Function Test_SoftFft
+.L7:
+Test_SoftFft:	.type	func
+	mov	d15,#1024
+.L32:
+	movh	d0,#16256
+.L46:
+	utof	d15,d15
+.L33:
+	div.f	d8,d0,d15
+.L34:
+	mov	d9,#1024
+.L36:
+	call	GPIO_LED_Init
+.L47:
+	mov	d10,#0
+.L37:
+	j	.L2
+.L3:
+	mov	d15,#32477
+	addih	d15,d15,#17468
+.L48:
+	mul.f	d15,d8,d15
+.L49:
+	itof	d0,d10
+.L50:
+	mul.f	d4,d15,d0
+	call	__f_ftod
+	mov	e4,d3,d2
+	call	sin
+	mov	e4,d3,d2
+.L51:
+	mov	d6,#0
+	mov	d7,#0
+	addih	d7,d7,#16473
+.L52:
+	call	__d_mul
+	mov	e12,d3,d2
+.L53:
+	mul	d15,d10,#8
+.L54:
+	movh.a	a15,#@his(sfftIn)
+	lea	a15,[a15]@los(sfftIn)
+.L55:
+	addsc.a	a15,a15,d15,#0
+.L56:
+	mov	d15,#5219
+	addih	d15,d15,#17309
+.L57:
+	mul.f	d15,d8,d15
+.L58:
+	itof	d0,d10
+.L59:
+	mul.f	d4,d15,d0
+	call	__f_ftod
+	mov	e4,d3,d2
+	call	sin
+	mov	e4,d3,d2
+.L60:
+	mov	d6,#0
+	mov.u	d7,#32768
+	addih	d7,d7,#16465
+.L61:
+	call	__d_mul
+	mov	e4,d3,d2
+.L62:
+	mov	e6,d13,d12
+	call	__d_add
+	mov	e4,d3,d2
+	call	__d_dtof
+.L63:
+	st.w	[a15],d2
+.L64:
+	mul	d15,d10,#8
+.L65:
+	movh.a	a15,#@his(sfftIn)
+	lea	a15,[a15]@los(sfftIn)
+.L66:
+	addsc.a	a15,a15,d15,#0
+.L67:
+	mov	d15,#0
+.L68:
+	st.w	[a15]4,d15
+.L69:
+	add	d10,#1
+.L2:
+	jlt	d10,d9,.L3
+.L70:
+	j	.L4
+.L5:
+	movh.a	a4,#@his(sfftOut)
+	lea	a4,[a4]@los(sfftOut)
+.L71:
+	movh.a	a5,#@his(sfftIn)
+	lea	a5,[a5]@los(sfftIn)
+.L72:
+	mov	d4,#1024
+	call	Ifx_FftF32_radix2
+.L73:
+	movh.a	a4,#@his(sifftOut)
+	lea	a4,[a4]@los(sifftOut)
+.L74:
+	movh.a	a5,#@his(sfftOut)
+	lea	a5,[a5]@los(sfftOut)
+.L75:
+	mov	d4,#1024
+	call	Ifx_FftF32_radix2I
+.L76:
+	mov	d4,#0
+.L77:
+	mov	d5,#2
+	call	LED_Ctrl
+.L4:
+	j	.L5
+.L35:
+	ret
+.L23:
+	
+__Test_SoftFft_function_end:
+	.size	Test_SoftFft,__Test_SoftFft_function_end-Test_SoftFft
+.L16:
+	; End of function
+	
+	.sdecl	'.bss.LQ_FFT_TEST.sfftIn',data,cluster('sfftIn')
+	.sect	'.bss.LQ_FFT_TEST.sfftIn'
+	.global	sfftIn
+	.align	256
+sfftIn:	.type	object
+	.size	sfftIn,8192
+	.space	8192
+	.sdecl	'.bss.LQ_FFT_TEST.sifftOut',data,cluster('sifftOut')
+	.sect	'.bss.LQ_FFT_TEST.sifftOut'
+	.global	sifftOut
+	.align	256
+sifftOut:	.type	object
+	.size	sifftOut,8192
+	.space	8192
+	.sdecl	'.bss.LQ_FFT_TEST.sfftOut',data,cluster('sfftOut')
+	.sect	'.bss.LQ_FFT_TEST.sfftOut'
+	.global	sfftOut
+	.align	256
+sfftOut:	.type	object
+	.size	sfftOut,8192
+	.space	8192
+	.calls	'Test_SoftFft','__f_ftod'
+	.calls	'Test_SoftFft','__d_mul'
+	.calls	'Test_SoftFft','__d_add'
+	.calls	'Test_SoftFft','__d_dtof'
+	.calls	'Test_SoftFft','GPIO_LED_Init'
+	.calls	'Test_SoftFft','sin'
+	.calls	'Test_SoftFft','Ifx_FftF32_radix2'
+	.calls	'Test_SoftFft','Ifx_FftF32_radix2I'
+	.calls	'Test_SoftFft','LED_Ctrl'
+	.extern	sin
+	.extern	Ifx_FftF32_radix2
+	.extern	Ifx_FftF32_radix2I
+	.extern	GPIO_LED_Init
+	.extern	LED_Ctrl
+	.extern	__f_ftod
+	.extern	__d_mul
+	.extern	__d_add
+	.extern	__d_dtof
+	.calls	'Test_SoftFft','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L9:
+	.word	1424
+	.half	3
+	.word	.L10
+	.byte	4
+.L8:
+	.byte	1
+	.byte	'../src/APP/LQ_FFT_TEST.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\Users\\24387\\AURIX-v1.10.6-workspace\\LQ_TC297TestLED-V7.0\\Debug\\',0,12,1
+	.word	.L11
+	.byte	2,1,1,3
+	.word	187
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,58,17,1,1,5
+	.byte	'fun',0,1,58,43
+	.word	190
+	.byte	6,0,7
+	.byte	'__fract',0,4,128,1
+.L26:
+	.byte	7
+	.byte	'float',0,4,4,8
+	.byte	'Ifx__float_to_fract',0,3,1,149,2,18
+	.word	235
+	.byte	1,1,5
+	.byte	'a',0,1,149,2,44
+	.word	247
+	.byte	6,0,7
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'void',0,3
+	.word	327
+	.byte	8
+	.byte	'__ld64',0,3,2,132,1,19
+	.word	301
+	.byte	1,1,5
+	.byte	'addr',0,2,132,1,32
+	.word	333
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,140,1,17,1,1,5
+	.byte	'addr',0,2,140,1,30
+	.word	333
+	.byte	5
+	.byte	'value',0,2,140,1,43
+	.word	301
+	.byte	6,0,10,4,58,9,8,11
+	.byte	'real',0
+	.word	247
+	.byte	4,2,35,0,11
+	.byte	'imag',0
+	.word	247
+	.byte	4,2,35,4,0,12
+	.word	419
+	.byte	3
+	.word	453
+	.byte	8
+	.byte	'IFX_Cf32_dot',0,3,3,82,20
+	.word	247
+	.byte	1,1,5
+	.byte	'b',0,3,82,49
+	.word	458
+	.byte	6,0,8
+	.byte	'IFX_Cf32_mag',0,3,3,88,20
+	.word	247
+	.byte	1,1,5
+	.byte	'c',0,3,88,49
+	.word	458
+	.byte	13,6,0,0,3
+	.word	419
+	.byte	4
+	.byte	'IFX_Cf32_set',0,3,3,122,17,1,1,5
+	.byte	'a',0,3,122,40
+	.word	537
+	.byte	5
+	.byte	're',0,3,122,51
+	.word	247
+	.byte	5
+	.byte	'im',0,3,122,63
+	.word	247
+	.byte	6,0,14
+	.word	195
+	.byte	15
+	.word	221
+	.byte	6,0,14
+	.word	256
+	.byte	15
+	.word	288
+	.byte	6,0,14
+	.word	338
+	.byte	15
+	.word	357
+	.byte	6,0,14
+	.word	373
+	.byte	15
+	.word	388
+	.byte	15
+	.word	402
+	.byte	6,0,7
+	.byte	'double',0,8,4,16
+	.byte	'sin',0,5,88,25
+	.word	649
+	.byte	1,1,1,1,17,5,88,43
+	.word	649
+	.byte	0,14
+	.word	463
+	.byte	15
+	.word	487
+	.byte	6,0,14
+	.word	499
+	.byte	15
+	.word	523
+	.byte	13,18
+	.word	463
+	.byte	15
+	.word	487
+	.byte	19
+	.word	497
+	.byte	0,6,0,0,14
+	.word	542
+	.byte	15
+	.word	562
+	.byte	15
+	.word	572
+	.byte	15
+	.word	583
+	.byte	6,0
+.L24:
+	.byte	7
+	.byte	'unsigned short int',0,2,7,16
+	.byte	'Ifx_FftF32_radix2',0,6,79,22
+	.word	537
+	.byte	1,1,1,1,5
+	.byte	'R',0,6,79,50
+	.word	537
+	.byte	5
+	.byte	'X',0,6,79,69
+	.word	458
+	.byte	5
+	.byte	'nX',0,6,79,79
+	.word	748
+	.byte	0,16
+	.byte	'Ifx_FftF32_radix2I',0,6,82,22
+	.word	537
+	.byte	1,1,1,1,5
+	.byte	'R',0,6,82,51
+	.word	537
+	.byte	5
+	.byte	'X',0,6,82,70
+	.word	458
+	.byte	5
+	.byte	'nX',0,6,82,80
+	.word	748
+	.byte	0,20
+	.byte	'GPIO_LED_Init',0,7,32,6,1,1,1,1,21,7,8,9,1,22
+	.byte	'LED0',0,0,22
+	.byte	'LED1',0,1,22
+	.byte	'LED2',0,2,22
+	.byte	'LED3',0,3,22
+	.byte	'LEDALL',0,4,0,21,7,17,9,1,22
+	.byte	'ON',0,0,22
+	.byte	'OFF',0,1,22
+	.byte	'RVS',0,2,0,23
+	.byte	'LED_Ctrl',0,7,33,6,1,1,1,1,5
+	.byte	'LEDno',0,7,33,22
+	.word	917
+	.byte	5
+	.byte	'sta',0,7,33,36
+	.word	960
+	.byte	0
+.L29:
+	.byte	7
+	.byte	'int',0,4,5,7
+	.byte	'short int',0,2,5,24
+	.byte	'__wchar_t',0,8,1,1
+	.word	1034
+	.byte	7
+	.byte	'unsigned int',0,4,7,24
+	.byte	'__size_t',0,8,1,1
+	.word	1065
+	.byte	24
+	.byte	'__ptrdiff_t',0,8,1,1
+	.word	1027
+	.byte	25,1,3
+	.word	1118
+	.byte	24
+	.byte	'__codeptr',0,8,1,1
+	.word	1120
+	.byte	7
+	.byte	'unsigned char',0,1,8,24
+	.byte	'uint8',0,9,108,29
+	.word	1143
+	.byte	24
+	.byte	'uint16',0,9,112,29
+	.word	748
+	.byte	7
+	.byte	'unsigned long int',0,4,7,24
+	.byte	'uint32',0,9,116,29
+	.word	1189
+	.byte	24
+	.byte	'uint64',0,9,121,29
+	.word	301
+	.byte	24
+	.byte	'sint16',0,9,129,1,29
+	.word	1034
+	.byte	7
+	.byte	'long int',0,4,5,24
+	.byte	'sint32',0,9,134,1,29
+	.word	1256
+	.byte	7
+	.byte	'long long int',0,8,5,24
+	.byte	'sint64',0,9,141,1,29
+	.word	1284
+	.byte	24
+	.byte	'float32',0,9,170,1,29
+	.word	247
+	.byte	24
+	.byte	'pvoid',0,4,54,28
+	.word	333
+	.byte	24
+	.byte	'cfloat32',0,4,62,3
+	.word	419
+	.byte	24
+	.byte	'Ifx_TickTime',0,4,76,28
+	.word	1284
+	.byte	24
+	.byte	'LEDn_e',0,7,15,3
+	.word	917
+	.byte	24
+	.byte	'LEDs_e',0,7,22,3
+	.word	960
+.L31:
+	.byte	26,128,64
+	.word	419
+	.byte	27,255,7,0,0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L10:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
+	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,58,15,59,15,57
+	.byte	15,11,15,0,0,11,13,0,3,8,73,19,11,15,56,9,0,0,12,38,0,73,19,0,0,13,11,1,0,0,14,46,1,49,19,0,0,15,5,0,49
+	.byte	19,0,0,16,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,17,5,0,58,15,59,15,57,15,73,19
+	.byte	0,0,18,29,1,49,19,0,0,19,11,0,49,19,0,0,20,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,21,4
+	.byte	1,58,15,59,15,57,15,11,15,0,0,22,40,0,3,8,28,13,0,0,23,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60
+	.byte	12,0,0,24,22,0,3,8,58,15,59,15,57,15,73,19,0,0,25,21,0,54,15,0,0,26,1,1,11,15,73,19,0,0,27,33,0,47,15
+	.byte	0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L11:
+	.word	.L39-.L38
+.L38:
+	.half	3
+	.word	.L41-.L40
+.L40:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\Infineon\\AURIX-Studio-1.10.6\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
+	.byte	'D:\\\\Users\\\\24387\\\\AURIX-v1.10.6-workspace\\\\LQ_TC297TestLED-V7.0\\\\src\\\\APP\\\\inc',0
+	.byte	'../src/APP',0,0
+	.byte	'..\\Libraries\\iLLD\\TC29B\\Tricore\\Cpu\\Std\\IfxCpu_IntrinsicsTasking.h',0,0,0,0
+	.byte	'..\\Libraries\\iLLD\\TC29B\\Tricore\\Cpu\\Std\\IfxCpu_Intrinsics.h',0,0,0,0
+	.byte	'..\\Libraries\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Cf32.h',0,0,0,0
+	.byte	'..\\Libraries\\iLLD\\TC29B\\Tricore\\Cpu\\Std\\Ifx_Types.h',0,0,0,0
+	.byte	'math.h',0,1,0,0
+	.byte	'..\\Libraries\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.h',0,0,0,0
+	.byte	'LQ_GPIO_LED.h',0,2,0,0
+	.byte	'LQ_FFT_TEST.c',0,3,0,0
+	.byte	'..\\Libraries\\iLLD\\TC29B\\Tricore\\Cpu\\Std\\Platform_Types.h',0,0,0,0,0
+.L41:
+.L39:
+	.sdecl	'.debug_info',debug,cluster('Test_SoftFft')
+	.sect	'.debug_info'
+.L12:
+	.word	293
+	.half	3
+	.word	.L13
+	.byte	4,1
+	.byte	'../src/APP/LQ_FFT_TEST.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\Users\\24387\\AURIX-v1.10.6-workspace\\LQ_TC297TestLED-V7.0\\Debug\\',0,12,1
+	.word	.L15,.L14
+	.byte	2
+	.word	.L8
+	.byte	3
+	.byte	'Test_SoftFft',0,1,25,6,1,1,1
+	.word	.L7,.L23,.L6
+	.byte	4
+	.word	.L7,.L23
+	.byte	5
+	.byte	'Fs',0,1,27,20
+	.word	.L24,.L25
+	.byte	5
+	.byte	'T',0,1,28,11
+	.word	.L26,.L27
+	.byte	5
+	.byte	'L',0,1,29,20
+	.word	.L24,.L28
+	.byte	5
+	.byte	'i',0,1,31,9
+	.word	.L29,.L30
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Test_SoftFft')
+	.sect	'.debug_abbrev'
+.L13:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Test_SoftFft')
+	.sect	'.debug_line'
+.L14:
+	.word	.L43-.L42
+.L42:
+	.half	3
+	.word	.L45-.L44
+.L44:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'../src/APP',0,0
+	.byte	'LQ_FFT_TEST.c',0,1,0,0,0
+.L45:
+	.byte	5,23,7,0,5,2
+	.word	.L7
+	.byte	3,26,1,5,15,9
+	.half	.L32-.L7
+	.byte	3,1,1,5,22,9
+	.half	.L46-.L32
+	.byte	1,5,20,9
+	.half	.L33-.L46
+	.byte	1,5,22,9
+	.half	.L34-.L33
+	.byte	3,1,1,5,18,9
+	.half	.L36-.L34
+	.byte	3,3,1,5,12,9
+	.half	.L47-.L36
+	.byte	3,1,1,5,22,9
+	.half	.L37-.L47
+	.byte	1,5,83,9
+	.half	.L3-.L37
+	.byte	3,2,1,5,91,9
+	.half	.L48-.L3
+	.byte	1,5,95,9
+	.half	.L49-.L48
+	.byte	1,5,93,9
+	.half	.L50-.L49
+	.byte	1,5,62,9
+	.half	.L51-.L50
+	.byte	1,5,66,9
+	.half	.L52-.L51
+	.byte	1,5,15,9
+	.half	.L53-.L52
+	.byte	1,5,9,9
+	.half	.L54-.L53
+	.byte	1,5,15,9
+	.half	.L55-.L54
+	.byte	1,5,46,9
+	.half	.L56-.L55
+	.byte	1,5,53,9
+	.half	.L57-.L56
+	.byte	1,5,57,9
+	.half	.L58-.L57
+	.byte	1,5,55,9
+	.half	.L59-.L58
+	.byte	1,5,26,9
+	.half	.L60-.L59
+	.byte	1,5,29,9
+	.half	.L61-.L60
+	.byte	1,5,60,9
+	.half	.L62-.L61
+	.byte	1,5,24,9
+	.half	.L63-.L62
+	.byte	1,5,15,9
+	.half	.L64-.L63
+	.byte	3,1,1,5,9,9
+	.half	.L65-.L64
+	.byte	1,5,15,9
+	.half	.L66-.L65
+	.byte	1,5,26,9
+	.half	.L67-.L66
+	.byte	1,5,24,9
+	.half	.L68-.L67
+	.byte	1,5,25,9
+	.half	.L69-.L68
+	.byte	3,125,1,5,22,9
+	.half	.L2-.L69
+	.byte	1,5,13,7,9
+	.half	.L70-.L2
+	.byte	3,5,1,5,27,9
+	.half	.L5-.L70
+	.byte	3,3,1,5,36,9
+	.half	.L71-.L5
+	.byte	1,5,44,9
+	.half	.L72-.L71
+	.byte	1,5,28,9
+	.half	.L73-.L72
+	.byte	3,2,1,5,38,9
+	.half	.L74-.L73
+	.byte	1,5,47,9
+	.half	.L75-.L74
+	.byte	1,5,18,9
+	.half	.L76-.L75
+	.byte	3,1,1,5,24,9
+	.half	.L77-.L76
+	.byte	1,5,13,9
+	.half	.L4-.L77
+	.byte	3,122,1,5,1,9
+	.half	.L35-.L4
+	.byte	3,8,1,7,9
+	.half	.L16-.L35
+	.byte	0,1,1
+.L43:
+	.sdecl	'.debug_ranges',debug,cluster('Test_SoftFft')
+	.sect	'.debug_ranges'
+.L15:
+	.word	-1,.L7,0,.L16-.L7,0,0
+	.sdecl	'.debug_info',debug,cluster('sfftIn')
+	.sect	'.debug_info'
+.L17:
+	.word	207
+	.half	3
+	.word	.L18
+	.byte	4,1
+	.byte	'../src/APP/LQ_FFT_TEST.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\Users\\24387\\AURIX-v1.10.6-workspace\\LQ_TC297TestLED-V7.0\\Debug\\',0,12,1,2
+	.word	.L8
+	.byte	3
+	.byte	'sfftIn',0,8,11,10
+	.word	.L31
+	.byte	1,5,3
+	.word	sfftIn
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('sfftIn')
+	.sect	'.debug_abbrev'
+.L18:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('sifftOut')
+	.sect	'.debug_info'
+.L19:
+	.word	209
+	.half	3
+	.word	.L20
+	.byte	4,1
+	.byte	'../src/APP/LQ_FFT_TEST.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\Users\\24387\\AURIX-v1.10.6-workspace\\LQ_TC297TestLED-V7.0\\Debug\\',0,12,1,2
+	.word	.L8
+	.byte	3
+	.byte	'sifftOut',0,8,14,10
+	.word	.L31
+	.byte	1,5,3
+	.word	sifftOut
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('sifftOut')
+	.sect	'.debug_abbrev'
+.L20:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('sfftOut')
+	.sect	'.debug_info'
+.L21:
+	.word	208
+	.half	3
+	.word	.L22
+	.byte	4,1
+	.byte	'../src/APP/LQ_FFT_TEST.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\Users\\24387\\AURIX-v1.10.6-workspace\\LQ_TC297TestLED-V7.0\\Debug\\',0,12,1,2
+	.word	.L8
+	.byte	3
+	.byte	'sfftOut',0,8,17,10
+	.word	.L31
+	.byte	1,5,3
+	.word	sfftOut
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('sfftOut')
+	.sect	'.debug_abbrev'
+.L22:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_loc',debug,cluster('Test_SoftFft')
+	.sect	'.debug_loc'
+.L25:
+	.word	-1,.L7,.L32-.L7,.L33-.L7
+	.half	1
+	.byte	95
+	.word	0,0
+.L28:
+	.word	-1,.L7,.L36-.L7,.L35-.L7
+	.half	1
+	.byte	89
+	.word	0,0
+.L27:
+	.word	-1,.L7,.L34-.L7,.L35-.L7
+	.half	1
+	.byte	88
+	.word	0,0
+.L6:
+	.word	-1,.L7,0,.L23-.L7
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L30:
+	.word	-1,.L7,.L37-.L7,.L35-.L7
+	.half	1
+	.byte	90
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L78:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Test_SoftFft')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L78,.L7,.L23-.L7
+	; Module end
